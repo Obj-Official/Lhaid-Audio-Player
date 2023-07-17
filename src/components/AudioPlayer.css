@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  /*background-color: #282c34;*/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.Lhaid-logo{
+    height: 43px;
+    width: 138px;
+    margin: 5px 0px 20px 0px;
+}
+.Thumbnail{
+    height: 240px;
+    width: 240px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.music-title{
+    color: white;
+    font-size: 20px;
+    font-family: Verdana;
+}
+.Artist{
+  color: white;
+  font-size: 15px;
+  font-family: Courier;
+}
+.time{
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  margin: 5px;
+}
+.PausePlay-btn{
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  border: 5px solid white;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  margin: 0px 10px;
+  font-size: 25px;
+  text-align: center;
+}
+.Mid-btn{
+  width: 30px;
+  height: 30px;
+  border-width: 2px 0px;
+  border-color: white;
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  margin: 5px;
+}
+.Next-btn{
+  width: 50px;
+  height: 30px;
+  border-width: 2px 2px 2px 0px;
+  border-radius: 0px 50px 50px 0px;
+  border-color: white;
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  margin: 5px;
+}
+.Prev-btn{
+  width: 50px;
+  height: 30px;
+  border-width: 2px 0px 2px 2px;
+  border-radius: 50px 0px 0px 50px;
+  border-color: white;
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  margin: 5px;
+}
+.repeat-btn, .volume-btn{
+  width: 45px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+.controls{
+  color: black;
+}
+.repeat{
+  width: 125px; 
+  margin-top: -5px 0px;
+  display: inline-block;
+}
+#repeatActive{
+  color: purple;
+  font-size: 15px;
+  font-weight: 150px;
+}
+.volume{
+  width: 125px; 
+  margin-top: -5px 0px;
+  display: inline-block;
+}
+#DisplayVolume{
+  display: none;
+  z-index: 1;
+  position: absolute;
+  margin-right: -5px;
+}
+.volume:hover #DisplayVolume {
+  display: block;
+} 
+/*progress bar style*/
+input[id="progressBar"] {
+  --range-progress: 0;
+  background: maroon;
+  color: maroon;
+  cursor: grab;
+  width: 175px;
+}
+
+input[type="range"]::before {
+  /* ... */
+  background: #f50;
+  width: var(--range-progress);
+  /* ... */
+}
+input[id="volumeBar"] {
+  width: 75px;
+  height: 3px;
+}
