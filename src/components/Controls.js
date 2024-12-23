@@ -92,6 +92,7 @@ const Controls = ({ audioRef, duration, progressBarRef, setTimeProgress,  tracks
 
   return (
     <div className="controls-wrapper">
+      <p></p>
       <div className='repeat' align='left'>
         <button className='repeat-btn' onClick={() => setLoopTracks((prev) => !prev)}>
           {loopTracks ? <b id="repeatActive"><IoRepeat/></b> : <IoRepeatOutline />}
